@@ -10,3 +10,15 @@ $tertiary-color:  #55DFB4;
 
 $primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Raleway', sans-serif;
+
+// mixins
+
+@mixin after-styles {
+  content: "";
+  display: block;
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1000;
+}
