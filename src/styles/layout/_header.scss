@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+
+  .header__logo {
+    font-size: 3.2rem;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-weight: 300;
+  }
+  .header__nav {
+
+    .header__list {
+      display: flex;
+
+      .header__list--item {
+        font-size: 1.1rem;
+        letter-spacing: 0.328rem;
+        font-family: $primary-font;
+        font-weight: 700;
+        //margin-inline: 2rem;
+        padding: 2.4rem;
+      }
+    }
+  }
+}
