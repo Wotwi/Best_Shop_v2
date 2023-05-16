@@ -15,7 +15,7 @@ function Pricing(props) {
                         <li className="pricing__list-item">Two years license</li>
                         <li className="pricing__list-item">Full support</li>
                     </ul>
-                    <button className="pricing__btn"></button>
+                    <button className="pricing__btn">Begin</button>
                 </div>
                 <div className="pricing__panel-professional">
                     <h5 className="pricing__panel-header">Professional</h5>
@@ -27,7 +27,7 @@ function Pricing(props) {
                         <li className="pricing__list-item">One year license</li>
                         <li className="pricing__list-item">Full support</li>
                     </ul>
-                    <button className="pricing__btn"></button>
+                    <button className="pricing__btn">Begin</button>
                 </div>
                 <div className="pricing__panel-premium">
                     <h5 className="pricing__panel-header">Premium</h5>
@@ -39,7 +39,7 @@ function Pricing(props) {
                         <li className="pricing__list-item">Two years license</li>
                         <li className="pricing__list-item">Full support</li>
                     </ul>
-                    <button className="pricing__btn"></button>
+                    <button className="pricing__btn">Begin</button>
                 </div>
             </div>
         </div>

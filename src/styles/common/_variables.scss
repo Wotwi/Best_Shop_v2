@@ -34,3 +34,98 @@ $secondary-font: 'Raleway', sans-serif;
   background-color: #fff;
   margin-top: 3.7rem;
 }
+
+// for pricing page
+
+@mixin pricing-panel {
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 8rem;
+}
+
+@mixin pricing-panel-header {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: .1rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+@mixin pricing-panel-price {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: .2rem;
+  text-align: center;
+}
+
+@mixin pricing-btn {
+  width: 15rem;
+  height: 5rem;
+  border: none;
+  border-radius: 2.3rem;
+  font-family: $primary-font;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 4.1rem;
+  color: #fff;
+  position: absolute;
+  bottom: -2.5rem;
+}
+
+@mixin green-mark {
+  content: "";
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: .1rem solid $tertiary-color;
+  position: absolute;
+  top: 1.5rem;
+}
+
+// afters for pricing page
+
+@mixin first-item {
+  &:nth-child(1) {
+    &:before {
+      @include green-mark;
+    }
+  }
+}
+
+@mixin second-item {
+  &:nth-child(2) {
+    &:before {
+      @include green-mark;
+    }
+  }
+}
+
+@mixin third-item {
+  &:nth-child(3) {
+    &:before {
+      @include green-mark;
+    }
+  }
+}
+
+@mixin fourth-item {
+  &:nth-child(4) {
+    &:before {
+      @include green-mark;
+    }
+  }
+}
+
+@mixin fifth-item {
+  &:nth-child(5) {
+    &:before {
+      @include green-mark;
+    }
+  }
+}
