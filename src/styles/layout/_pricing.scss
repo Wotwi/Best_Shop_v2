@@ -1,0 +1,217 @@
+.pricing__header {
+  font-family: $secondary-font;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.pricing__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// ---------------------------------------
+
+.pricing__panel-basic {
+  border: .1rem solid $secondary-color;
+  width: 23%;
+  height: 46.1rem;
+  @include pricing-panel;
+  position: relative;
+
+  .pricing__panel-header {
+    @include pricing-panel-header;
+  }
+  .pricing__panel-price {
+    @include pricing-panel-price;
+    color: $secondary-color;
+  }
+  .pricing__list {
+
+    .pricing__list-item {
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      line-height: 4.1rem;
+      position: relative;
+      text-align: center;
+
+      &:nth-child(1) {
+        &:before {
+          @include green-mark;
+          left: -.5rem;
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          @include green-mark;
+          left: -.5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          @include green-mark;
+          left: .5rem;
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          @include green-mark;
+          border: .1rem solid $secondary-color;
+          left: -2rem;
+        }
+      }
+
+      &:nth-child(5) {
+        &:before {
+          @include green-mark;
+          border: .1rem solid $secondary-color;
+          left: -.3rem;
+        }
+      }
+    }
+  }
+  .pricing__btn {
+    @include pricing-btn;
+    background-color: $secondary-color;
+  }
+}
+
+// ------------------------------------------
+
+.pricing__panel-professional {
+  border: .1rem solid $primary-color;
+  width: 25%;
+  height: 50rem;
+  @include pricing-panel;
+
+  .pricing__panel-header {
+    @include pricing-panel-header;
+  }
+  .pricing__panel-price {
+    @include pricing-panel-price;
+    color: $primary-color;
+  }
+  .pricing__list {
+
+    .pricing__list-item {
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      line-height: 4.1rem;
+      position: relative;
+      text-align: center;
+
+      &:nth-child(1) {
+        &:before {
+          @include green-mark;
+          left: -1rem;
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          @include green-mark;
+          left: -1.5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          @include green-mark;
+          left: .4rem;
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          @include green-mark;
+          left: -2rem;
+        }
+      }
+
+      &:nth-child(5) {
+        &:before {
+          @include green-mark;
+          border: .1rem solid $secondary-color;
+          left: -.8rem;
+        }
+      }
+    }
+
+  }
+  .pricing__btn {
+    @include pricing-btn;
+    background-color: $primary-color;
+  }
+}
+
+// ------------------------------------------
+
+.pricing__panel-premium {
+  border: .1rem solid $tertiary-color;
+  width: 23%;
+  height: 46.1rem;
+  @include pricing-panel;
+
+  .pricing__panel-header {
+    @include pricing-panel-header;
+  }
+  .pricing__panel-price {
+    @include pricing-panel-price;
+    color: $tertiary-color;
+  }
+  .pricing__list {
+
+    .pricing__list-item {
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      line-height: 4.1rem;
+      position: relative;
+      text-align: center;
+
+      &:nth-child(1) {
+        &:before {
+          @include green-mark;
+          left: .5rem;
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          @include green-mark;
+          left: -1rem;
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          @include green-mark;
+          left: .2rem;
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          @include green-mark;
+          left: -2rem;
+        }
+      }
+
+      &:nth-child(5) {
+        &:before {
+          @include green-mark;
+          left: -.8rem;
+        }
+      }
+    }
+
+  }
+  .pricing__btn {
+    @include pricing-btn;
+    background-color: $tertiary-color;
+  }
+}

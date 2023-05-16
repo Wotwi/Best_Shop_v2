@@ -1,0 +1,141 @@
+.benefits__wrapper {
+  background-color: #F7F7F7;
+  padding-top: 10.5rem;
+  padding-bottom: 10.5rem;
+}
+
+.benefits__text {
+  width: 38%;
+
+  .benefits__header {
+    font-family: $secondary-font;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.benefits__img {
+  width: 50%;
+  text-align: end;
+  position: relative;
+  z-index: 1000;
+  margin-top: 4rem;
+}
+
+.benefits__panel-1 {
+  @include benefits-panel;
+
+  .benefits__content {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 5rem;
+      border-bottom: .3rem solid $secondary-color;
+      width: 73%;
+    }
+  }
+
+  .benefits__img:after {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    background-color: $secondary-color;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 4.1rem;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    z-index: -1000;
+  }
+
+  .benefits__text {
+    width: 38%;
+    margin-top: 2rem;
+  }
+}
+
+.benefits__panel-2 {
+  @include benefits-panel;
+  flex-direction: row-reverse;
+
+  .benefits__content {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 5rem;
+      border-bottom: .3rem solid $primary-color;
+      width: 73%;
+    }
+  }
+
+  .benefits__img {
+    width: 50%;
+    text-align: start;
+    position: relative;
+    z-index: 1000;
+    margin-top: -3rem;
+  }
+
+  .benefits__img:after {
+    content: "";
+    display: block;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top: -2rem;
+    z-index: -1000;
+  }
+}
+
+.benefits__panel-3 {
+  //@include benefits-panel;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  //margin-top: 3.7rem;
+  margin-inline: 22.9rem;
+
+  .benefits__text {
+    width: 55%;
+    height: 37rem;
+    padding: 7rem 5rem 7rem 5rem;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .benefits__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 37rem;
+    background-color: $tertiary-color;
+    border-radius: 5px;
+  }
+
+  .benefits__content {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 5rem;
+      border-bottom: .3rem solid $tertiary-color;
+      width: 55%;
+    }
+  }
+}
