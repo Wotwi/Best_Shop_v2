@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+$columns: 12;
+$columns-base-width: calc(100% / $columns);
+
+.container-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*='col-'] {
+  min-height: 1px;
+  width: $columns-base-width;
+  padding: 20px;
+  border: 1px solid red;
+  height: 500px;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: $columns-base-width * $i;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
