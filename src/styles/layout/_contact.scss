@@ -1,0 +1,123 @@
+.contact__wrapper {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 15rem;
+}
+
+.contact-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .contact__header {
+    font-family: $secondary-font;
+    font-size: 4.9rem;
+    width: 100%;
+  }
+  .contact__content {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: -15rem;
+  }
+  .contact__info-email {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #A5A5A5;
+    width: 40%;
+    margin-top: -30rem;
+    position: relative;
+    margin-left: 3rem;
+
+    .contact__icon {
+      margin-top: 1rem;
+      position: absolute;
+      top: -1.2rem;
+      left: -3rem;
+    }
+  }
+  .contact__info-phone {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #A5A5A5;
+    width: 40%;
+    margin-top: -30rem;
+    position: relative;
+
+    .contact__icon {
+      margin-top: 1rem;
+      position: absolute;
+      top: -1.2rem;
+      left: -3rem;
+    }
+  }
+}
+
+.contact-right {
+  display: flex;
+  //flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .contact__label-name {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $primary-color;
+    letter-spacing: .328rem;
+    line-height: 1.5rem;
+    width: 100%;
+    margin-left: 5rem;
+  }
+  .contact__input-name {
+    width: 80%;
+    border: none;
+    border-bottom: .1rem solid #95989A;
+    margin-left: 5rem;
+  }
+  .contact__label-email {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $primary-color;
+    letter-spacing: .328rem;
+    line-height: 1.5rem;
+    width: 100%;
+    margin-left: 5rem;
+  }
+  .contact__input-email {
+    width: 80%;
+    border: none;
+    border-bottom: .1rem solid #95989A;
+    margin-left: 5rem;
+  }
+  .contact__checkbox {
+    width: 20%;
+    height: 2.4rem;
+    margin-right: 3.5rem;
+  }
+  .contact__rules {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    color: #707070;
+    width: 70%;
+  }
+  .contact__btn {
+    width: 22.6rem;
+    height: 5.7rem;
+    border-radius: 3.5rem;
+    border: none;
+    background-color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    left: 38rem;
+  }
+}
