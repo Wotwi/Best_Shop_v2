@@ -6,8 +6,10 @@ function Pricing(props) {
             <h3 className="pricing__header">Pricing</h3>
             <div className="pricing__wrapper">
                 <div className="pricing__panel-basic">
-                    <h5 className="pricing__panel-header">Basic</h5>
-                    <p className="pricing__panel-price">$0</p>
+                    <div className="pricing__panel-info">
+                        <h5 className="pricing__panel-header">Basic</h5>
+                        <p className="pricing__panel-price">$0</p>
+                    </div>
                     <ul className="pricing__list">
                         <li className="pricing__list-item">100 MB HDD</li>
                         <li className="pricing__list-item">1 Subdomain</li>
@@ -18,8 +20,10 @@ function Pricing(props) {
                     <button className="pricing__btn">Begin</button>
                 </div>
                 <div className="pricing__panel-professional">
-                    <h5 className="pricing__panel-header">Professional</h5>
-                    <p className="pricing__panel-price">$25</p>
+                    <div className="pricing__panel-info">
+                        <h5 className="pricing__panel-header">Professional</h5>
+                        <p className="pricing__panel-price">$25</p>
+                    </div>
                     <ul className="pricing__list">
                         <li className="pricing__list-item">500 MB HDD</li>
                         <li className="pricing__list-item">2 Subdomains</li>
@@ -30,8 +34,10 @@ function Pricing(props) {
                     <button className="pricing__btn">Begin</button>
                 </div>
                 <div className="pricing__panel-premium">
-                    <h5 className="pricing__panel-header">Premium</h5>
-                    <p className="pricing__panel-price">$60</p>
+                    <div className="pricing__panel-info">
+                        <h5 className="pricing__panel-header">Premium</h5>
+                        <p className="pricing__panel-price">$60</p>
+                    </div>
                     <ul className="pricing__list">
                         <li className="pricing__list-item">2 GB HDD</li>
                         <li className="pricing__list-item">5 Subdomains</li>
