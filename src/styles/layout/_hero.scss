@@ -33,3 +33,30 @@
     margin-top: 3.8rem;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .hero {
+    padding-bottom: 7rem;
+
+
+    .hero__header {
+      margin-top: 5rem;
+      font-size: 3.5rem;
+    }
+    .hero__content {
+      font-size: 1.6rem;
+      text-align: center;
+      width: 30rem;
+    }
+    .hero__btn {
+      width: 83%;
+      height: 6.7rem;
+    }
+
+    img {
+      margin-top: 13rem;
+      overflow: hidden;
+      transform: scale(210%);
+    }
+  }
+}
