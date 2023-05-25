@@ -2,3 +2,9 @@
   margin-inline: auto;
   width: 70%;
 }
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 100vw;
+  }
+}
