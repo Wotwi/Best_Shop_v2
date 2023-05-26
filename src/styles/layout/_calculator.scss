@@ -1,36 +1,97 @@
 .calc__wrapper {
+  margin-top: 10rem;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10rem;
+  padding-left: 10rem;
 
   .calc__header {
-
+    width: 100%;
+    font-family: $secondary-font;
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 8.7rem 0 5rem 0;
   }
 
   .calc__form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     .calc__text-label {
 
     }
     .calc__text-input {
+      padding: .6rem;
+      border: .1rem solid $primary-color;
+      border-radius: .6rem;
+      width: 54%;
+      height: 4rem;
+      margin: 1rem 5rem 1rem 0;
+      color: #707070;
 
-      .calc__package-item {
+      .calc__select-item {
 
       }
     }
     .calc__checkbox-label {
-
+      font-family: $primary-font;
+      font-size: 1.2rem;
+      color: #707070;
+      width: 95%;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
     }
     .calc__checkbox-input {
-
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: .4rem;
+      margin-right: 2rem;
     }
   }
 
   .calc__results {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //align-items: flex-end;
 
     .calc__results-item {
-
+      display: flex;
+      align-items: center;
+      width: 47%;
+      height: 3.1rem;
+      padding: 1rem;
+      color: #fff;
+      background-color: $tertiary-color;
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      border-radius: .4rem;
+      box-shadow: 0px 3px 6px #00000029;
     }
 
     .calc__result-total {
-      
+      width: 22%;
+      background-color: $primary-color;
+      font-family: $primary-font;
+      font-size: 1.4rem;
+      padding: 1rem;
+      color: #fff;
+      border-radius: .4rem;
+      box-shadow: 0px 3px 6px #00000029;
+      display: flex;
+      margin-left: 18.5rem;
     }
   }
+}
+
+.calc__checkbox-span {
+  width: 63%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
