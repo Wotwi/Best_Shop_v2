@@ -1,14 +1,55 @@
+import {useState} from "react";
+
 function Calculator() {
+    const [value, setValue] = useState('');
+    const [orderValue, setOrderValue] = useState('');
+
+    const handleInputQuantity = (e) => {
+        const inputValue = e.target.value;
+        const intValue = parseInt(inputValue, 10);
+
+        if(Number.isNaN(intValue)) {
+            setValue('')
+        } else {
+            setValue(String(intValue));
+        }
+    };
+
+    const handleInputOrder = (e) => {
+        const inputValue = e.target.value;
+        const intValue = parseInt(inputValue, 10);
+
+        if(Number.isNaN(intValue)) {
+            setOrderValue('')
+        } else {
+            setOrderValue(String(intValue));
+        }
+    };
+
     return (
         <div className="container">
             <section className="calc__wrapper">
                 <h3 className="calc__header">Calculate how much you’ll pay</h3>
                 <form action="" className="calc__form">
                     <label htmlFor="quantity" className="calc__text-label"></label>
-                    <input type="text" className="calc__text-input" id="quantity" placeholder="Products quantity"/>
+                    <input
+                        type="number"
+                        className="calc__text-input"
+                        id="quantity"
+                        placeholder="Products quantity"
+                        value={value}
+                        onChange={handleInputQuantity}
+                    />
 
                     <label htmlFor="orders" className="calc__text-label"></label>
-                    <input type="text" className="calc__text-input" id="orders" placeholder="Estimated orders in month"/>
+                    <input
+                        type="number"
+                        className="calc__text-input"
+                        id="orders"
+                        placeholder="Estimated orders in month"
+                        value={orderValue}
+                        onChange={handleInputOrder}
+                    />
 
                     <label htmlFor="package" className="calc__text-label"></label>
                     <select name="package" id="package" className="calc__text-input" placeholder="Choose package">
