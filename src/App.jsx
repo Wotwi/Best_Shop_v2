@@ -6,6 +6,7 @@ import Benefits from "./components/Benefits.jsx";
 import Pricing from "./components/Pricing.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import Calculator from "./components/Calculator.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Benefits />
         <Pricing />
+        <Calculator />
         <Contact />
         <Footer />
     </>
